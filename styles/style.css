@@ -1,5 +1,6 @@
 /* CSS VARIABLES */
 :root {
+  --white: #fff;
   --primary: #b6895b;
   --main-background: #010101;
 }
@@ -17,4 +18,97 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--main-background);
+  color: var(--white);
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgba(1, 1, 1, 0.8);
+  border-bottom: 1px solid #a97d50;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+/* NAVBAR LOGO */
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.navbar .navbar-logo span {
+  color: var(--primary);
+}
+
+/* NAVBAR LINK */
+.navbar .navbar-nav a {
+  font-weight: 500;
+  color: var(--white);
+  font-size: 1rem;
+
+  /* Agar bisa diberikan margin */
+  display: inline-block;
+  margin: 0 12px;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+  transition: 0.2s ease-in-out;
+}
+
+/* GARIS DIBAWAH LINK KETIKA HOVER */
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.7);
+  transition: 0.2s linear;
+}
+
+/* NAVBAR EXTRA */
+.navbar .navbar-extra a {
+  color: var(--white);
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* -------- MEDIA QUERIES  -------- */
+/* LAPTOP */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* TABLET */
+@media (max-width: 758px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+  html {
+    font-size: 55%;
+  }
 }
