@@ -17,7 +17,8 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: var(--main-background);
+  /* background-color: var(--main-background); */
+  background-color: bisque;
   color: var(--white);
 }
 
@@ -100,9 +101,65 @@ body {
 }
 
 /* TABLET */
-@media (max-width: 758px) {
+@media (max-width: 768px) {
   html {
     font-size: 62.5%;
+  }
+
+  /* MENAMPILKAN HAMBURGER MENU */
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  /* MEMINDAHKAN POSISI UNTUK MENU SIDEBAR */
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+
+    /* AGAR DILUAR LAYAR*/
+    right: -100%;
+    background-color: var(--white);
+
+    /* MEMENUHI LAYAR */
+    width: 30rem;
+    height: 100vh;
+
+    /* TRANSISI */
+    transition: 0.3s;
+  }
+
+  /* MENAMBAHKAN CLASS ACTIVE KETIKA HAMBURGER MENU DIKLIK*/
+  .navbar .navbar-nav.active {
+    right: 0;
+    z-index: 10;
+  }
+
+  .navbar .navbar-nav a {
+    color: var(--main-background);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    /* background-color: tomato; */
+  }
+
+  /* MENGGESER KE KIRI */
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .overlay {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    backdrop-filter: blur(3px);
   }
 }
 
