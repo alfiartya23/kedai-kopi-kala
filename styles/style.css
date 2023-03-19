@@ -17,8 +17,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  /* background-color: var(--main-background); */
-  background-color: bisque;
+  background-color: var(--main-background);
   color: var(--white);
 }
 
@@ -96,7 +95,7 @@ body {
 /* LAPTOP */
 @media (max-width: 1366px) {
   html {
-    font-size: 75%;
+    font-size: 80%;
   }
 }
 
