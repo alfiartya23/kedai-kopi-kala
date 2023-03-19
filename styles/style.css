@@ -18,6 +18,7 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--main-background);
+  /* background-color: bisque; */
   color: var(--white);
 }
 
@@ -91,6 +92,119 @@ body {
   display: none;
 }
 
+/* HERO SECTION */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/header-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* POSISI YANG NON STATIS */
+  position: relative;
+}
+
+/* MENAMBAHKAN GRADASI HITAM KE HERO IMAGE */
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 30%;
+
+  bottom: 0;
+
+  /* UBAH TINGGI AGAR TIDAK MENGHALANGI BUTTON CTA */
+  background: linear-gradient(0deg, rgba(1, 1, 3, 1) 8%, rgba(255, 255, 255, 0) 50%);
+}
+
+.hero .content {
+  padding: 1.4rem 7%;
+  max-width: 60rem;
+}
+
+.hero .content h1 {
+  font-size: 5em;
+  color: var(--white);
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  line-height: 1.2;
+}
+
+.hero .content h1 span {
+  color: var(--primary);
+}
+
+.hero .content p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  line-height: 1.4;
+  font-weight: 100;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  mix-blend-mode: difference;
+  color: var(--white);
+}
+
+.hero .content .cta {
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 1.4rem;
+  padding: 1rem 3rem;
+  color: var(--white);
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+/* ABOUT SECTION */
+.about {
+  padding: 8rem 7% 1.4rem;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+}
+
+.about h2 span {
+  color: var(--primary);
+}
+
+.about .row {
+  display: flex;
+}
+
+.about .row .about-img {
+  flex: 1 1 45rem;
+}
+
+.about .row .about-img img {
+  width: 100%;
+}
+
+.about .row .content {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+}
+
+.about .row .content h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.about .row .content span {
+  color: var(--primary);
+}
+
+.about .row .content p {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  font-weight: 100;
+  line-height: 1.6;
+}
+
 /* -------- MEDIA QUERIES  -------- */
 /* LAPTOP */
 @media (max-width: 1366px) {
@@ -130,7 +244,6 @@ body {
   /* MENAMBAHKAN CLASS ACTIVE KETIKA HAMBURGER MENU DIKLIK*/
   .navbar .navbar-nav.active {
     right: 0;
-    z-index: 10;
   }
 
   .navbar .navbar-nav a {
@@ -139,7 +252,6 @@ body {
     margin: 1.5rem;
     padding: 0.5rem;
     font-size: 1.5rem;
-    /* background-color: tomato; */
   }
 
   /* MENGGESER KE KIRI */
@@ -151,14 +263,31 @@ body {
     transform: scaleX(0.2);
   }
 
-  .overlay {
-    position: absolute;
-    right: 0;
-    top: 100%;
-    width: 100%;
-    height: 100%;
-    background-color: blue;
-    backdrop-filter: blur(3px);
+  .hero {
+    min-height: 80vh;
+  }
+
+  .about .row {
+    flex-wrap: wrap;
+  }
+
+  .about .row .about-img img {
+    height: 24rem;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .about .row .content {
+    padding: 0;
+  }
+
+  .about .row .content h3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+
+  .about .row .content p {
+    font-size: 1.6rem;
   }
 }
 

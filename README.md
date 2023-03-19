@@ -14,6 +14,6 @@ Teknologi yang saya gunakan:
 
 ## Sumber
 
-Youtube Link: (https://youtu.be/MCVkMmYL-aY)
+Youtube Link: https://youtu.be/MCVkMmYL-aY
 
 Terima kasih 🙌
