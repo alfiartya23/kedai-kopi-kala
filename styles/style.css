@@ -20,6 +20,7 @@ body {
   background-color: var(--main-background);
   /* background-color: bisque; */
   color: var(--white);
+  min-height: 3000px;
 }
 
 /* NAVBAR */
@@ -121,8 +122,9 @@ body {
 }
 
 .hero .content {
-  padding: 1.4rem 7%;
+  padding: 1.5rem 7%;
   max-width: 60rem;
+  /* background-color: tomato; */
 }
 
 .hero .content h1 {
@@ -130,6 +132,7 @@ body {
   color: var(--white);
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
   line-height: 1.2;
+  margin-bottom: 1.5rem;
 }
 
 .hero .content h1 span {
@@ -137,28 +140,31 @@ body {
 }
 
 .hero .content p {
+  width: 85%;
   font-size: 1.5rem;
-  margin-top: 1rem;
+  margin-top: 1.25rem;
   line-height: 1.4;
   font-weight: 100;
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
   mix-blend-mode: difference;
   color: var(--white);
+  /* background-color: tomato; */
 }
 
 .hero .content .cta {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   display: inline-block;
   font-size: 1.4rem;
   padding: 1rem 3rem;
   color: var(--white);
   background-color: var(--primary);
   border-radius: 0.5rem;
-  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  box-shadow: 1px 4px 16px rgba(43, 45, 48, 0.5);
 }
 
 /* ABOUT SECTION */
-.about {
+.about,
+.menu {
   padding: 8rem 7% 1.4rem;
 }
 
@@ -166,10 +172,6 @@ body {
   text-align: center;
   font-size: 2.6rem;
   margin-bottom: 3rem;
-}
-
-.about h2 span {
-  color: var(--primary);
 }
 
 .about .row {
@@ -199,10 +201,47 @@ body {
 }
 
 .about .row .content p {
-  font-size: 1.3rem;
   margin-bottom: 0.8rem;
-  font-weight: 100;
   line-height: 1.6;
+}
+
+/* MENU SECTION */
+.menu .menu-header h2 {
+  font-size: 2.6rem;
+}
+
+/* Test */
+.list-menu {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* padding: 1.5rem; */
+}
+
+.list-menu .menu-card {
+  width: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.25rem 1.5rem;
+
+  background-color: #fafafa;
+  border-radius: 8px;
+}
+
+.list-menu .menu-card .content {
+  margin-top: 0.75rem;
+}
+
+.list-menu .menu-card .content .menu-card-title {
+  color: var(--main-background);
+}
+
+.list-menu .menu-card .content .menu-card-price {
+  color: var(--main-background);
 }
 
 /* -------- MEDIA QUERIES  -------- */
