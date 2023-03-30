@@ -2,7 +2,7 @@
 
 ## Selamat datang di repository Kedai Kopi Kala.
 
-Website ini dibuat sebagai latihan untuk pembuatan landing page Kedai Kopi Kala dari video tutorial di channel Web Programming UNPAS.
+Website ini dibuat sebagai latihan untuk pembuatan landing page Kedai Kopi Kala dari video tutorial di channel Web Programming UNPAS. Pada landing page ini dilengkapi dengan fitur peta yang terintegrasi dengan Google Map untuk menemukan lokasi dari kedai.
 
 ## Teknologi
 
@@ -12,7 +12,7 @@ Teknologi yang saya gunakan:
 - CSS
 - JavaScript
 
-## Sumber
+## Sumber Video
 
 Youtube Link: https://youtu.be/MCVkMmYL-aY
 
