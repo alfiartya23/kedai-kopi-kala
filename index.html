@@ -43,7 +43,7 @@
 
     <!-- HERO SECTION START -->
     <section class="hero" id="home">
-      <main class="content">
+      <main class="hero-content">
         <h1>Mari Nikmati Secangkir <span>Kopi</span></h1>
         <p>Kopi dengan kualitas terbaik yang diolah secara sempurna untuk mengawali hari Anda</p>
         <a href="#" class="cta">Beli Sekarang</a>
@@ -60,7 +60,7 @@
         <div class="about-img">
           <img src="./img/tentang-kami.jpg" alt="Tentang Kami" srcset="" />
         </div>
-        <div class="content">
+        <div class="about-content">
           <h3>Kenapa memilih Kopi<span>Kala</span>?</h3>
           <p>Hasil olahan kopi yang diracik secara sempurna oleh para barista kami yang profesional. Rasa yang dihasilkan berasal biji kopi terbaik di Indonesia.</p>
         </div>
@@ -70,50 +70,70 @@
 
     <!-- MENU SECTION START -->
     <section class="menu" id="menu">
-      <div class="menu-header">
-        <h2>Daftar Menu</h2>
-        <p>Yang populer saat ini</p>
-      </div>
-      <!-- <div class="row">
+      <h2>Daftar Menu</h2>
+      <p>Menu kopi yang sedang populer saat ini</p>
+
+      <div class="menu-row">
         <div class="menu-card">
-          <img src="./img/coffe-latte-1.jpg" class="menu-card-img" alt="Coffe Latte Image" />
-          <h3 class="menu-card-title">Coffe Latte</h3>
+          <img src="./img/coffe-latte-1.jpg" alt="Kopi Espresso" class="menu-card-img" />
+          <h3 class="menu-card-title">Kopi Latte</h3>
           <p class="menu-card-price">IDR 20.000</p>
         </div>
-      </div> -->
-      <div class="list-menu">
         <div class="menu-card">
-          <img src="./img/coffe-latte-1.jpg" alt="" />
-          <div class="content">
-            <h3 class="menu-card-title">Item title</h3>
-            <p class="menu-card-price">IDR 20.000</p>
-          </div>
+          <img src="./img/coffe-latte-1.jpg" alt="Kopi Espresso" />
+          <h3 class="menu-card-title">Kopi Latte</h3>
+          <p class="menu-card-price">IDR 20.000</p>
         </div>
         <div class="menu-card">
-          <img src="./img/coffe-latte-1.jpg" alt="" />
-          <div class="content">
-            <h3 class="menu-card-title">Item title</h3>
-            <p class="menu-card-price">IDR 20.000</p>
-          </div>
+          <img src="./img/coffe-latte-1.jpg" alt="Kopi Espresso" />
+          <h3 class="menu-card-title">Kopi Latte</h3>
+          <p class="menu-card-price">IDR 20.000</p>
         </div>
         <div class="menu-card">
-          <img src="./img/coffe-latte-1.jpg" alt="" />
-          <div class="content">
-            <h3 class="menu-card-title">Item title</h3>
-            <p class="menu-card-price">IDR 20.000</p>
-          </div>
-        </div>
-        <div class="menu-card">
-          <img src="./img/coffe-latte-1.jpg" alt="" />
-          <div class="content">
-            <h3 class="menu-card-title">Item title</h3>
-            <p class="menu-card-price">IDR 20.000</p>
-          </div>
+          <img src="./img/coffe-latte-1.jpg" alt="Kopi Espresso" />
+          <h3 class="menu-card-title">Kopi Latte</h3>
+          <p class="menu-card-price">IDR 20.000</p>
         </div>
       </div>
     </section>
 
     <!-- MENU SECTION END -->
+
+    <!-- CONTACT SECTION START -->
+    <section class="contact" id="contact">
+      <div class="contact-header">
+        <h2>Kontak Kami</h2>
+        <p>Jika Anda memiliki saran atau ingin menghubungi kami lebih lanjut, silahkan isi formulir dibawah ini.</p>
+
+        <div class="row">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d74040.6392543661!2d106.8465283413372!3d-6.139996313206696!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f58ab1132fd5%3A0x2623f5a6c83f3b27!2sNorth%20Jakarta%2C%20North%20Jakarta%20City%2C%20Jakarta!5e0!3m2!1sen!2sid!4v1680159956791!5m2!1sen!2sid"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="contact-map"
+          ></iframe>
+
+          <form action="">
+            <div class="input-group">
+              <i data-feather="user"></i>
+              <input type="text" placeholder="Nama" />
+            </div>
+            <div class="input-group">
+              <i data-feather="mail"></i>
+              <input type="text" placeholder="Email" />
+            </div>
+            <div class="input-group">
+              <i data-feather="phone"></i>
+              <input type="text" placeholder="No. Handphone" />
+            </div>
+            <button type="submit">Kirim Pesan</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION END -->
 
     <!-- SCRIPT -->
     <script src="script/script.js"></script>

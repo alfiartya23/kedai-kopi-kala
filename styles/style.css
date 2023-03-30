@@ -121,13 +121,13 @@ body {
   background: linear-gradient(0deg, rgba(1, 1, 3, 1) 8%, rgba(255, 255, 255, 0) 50%);
 }
 
-.hero .content {
+.hero .hero-content {
   padding: 1.5rem 7%;
   max-width: 60rem;
   /* background-color: tomato; */
 }
 
-.hero .content h1 {
+.hero .hero-content h1 {
   font-size: 5em;
   color: var(--white);
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
@@ -135,11 +135,11 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.hero .content h1 span {
+.hero .hero-content h1 span {
   color: var(--primary);
 }
 
-.hero .content p {
+.hero .hero-content p {
   width: 85%;
   font-size: 1.5rem;
   margin-top: 1.25rem;
@@ -151,7 +151,7 @@ body {
   /* background-color: tomato; */
 }
 
-.hero .content .cta {
+.hero .hero-content .cta {
   margin-top: 1.5rem;
   display: inline-block;
   font-size: 1.4rem;
@@ -163,8 +163,10 @@ body {
 }
 
 /* ABOUT SECTION */
+/* UNTUK PADDING TITLE SETIAP SECTION */
 .about,
-.menu {
+.menu,
+.contact {
   padding: 8rem 7% 1.4rem;
 }
 
@@ -186,62 +188,123 @@ body {
   width: 100%;
 }
 
-.about .row .content {
+.about .row .about-content {
   flex: 1 1 35rem;
   padding: 0 1rem;
 }
 
-.about .row .content h3 {
-  font-size: 1.25rem;
+.about .row .about-content h3 {
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
-.about .row .content span {
+.about .row .about-content span {
   color: var(--primary);
 }
 
-.about .row .content p {
+.about .row .about-content p {
+  font-size: 1.25rem;
   margin-bottom: 0.8rem;
   line-height: 1.6;
 }
 
 /* MENU SECTION */
-.menu .menu-header h2 {
+.menu h2 {
+  text-align: center;
   font-size: 2.6rem;
+  margin-bottom: 3rem;
 }
 
-/* Test */
-.list-menu {
-  margin-top: 2.5rem;
+.menu p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  text-align: center;
+  margin: auto;
+}
+
+.menu .menu-row {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
-  /* padding: 1.5rem; */
-}
-
-.list-menu .menu-card {
-  width: 300px;
-
-  display: flex;
-  flex-direction: column;
+  margin-top: 5rem;
   justify-content: center;
-  padding: 1.25rem 1.5rem;
+}
 
-  background-color: #fafafa;
+.menu .menu-row .menu-card {
+  /* border: 2px solid tomato; */
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.menu .menu-row .menu-card img {
+  border-radius: 50%;
+  width: 50%;
+}
+
+.menu .menu-row .menu-card-title {
+  margin: 1rem auto 0.5rem;
+}
+
+/* CONTACT SECITION */
+.contact .contact-header h2 {
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.contact .contact-header p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  /* max-width: 30rem; */
+  margin: auto;
+  text-align: center;
+}
+
+.contact .row {
+  display: flex;
+  margin-top: 2rem;
+  background-color: #222;
+  /* flex-wrap: wrap; */
+}
+
+.contact .row .contact-map {
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.contact .row form {
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.contact .row form .input-group {
+  display: flex;
+  align-items: baseline;
+  margin-top: 2rem;
+  background-color: var(--main-background);
+  border: 1px solid #eee;
+  padding-left: 2rem;
+
+  border-radius: 0.5rem;
+}
+
+.contact .row form .input-group input {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.25rem;
+  background: none;
+  color: var(--white);
+}
+
+.contact .row form button {
+  display: inline-block;
+  padding: 1rem 4rem;
+  margin-top: 3rem;
+  font-size: 1.25rem;
+  color: var(--white);
+  background-color: var(--primary);
   border-radius: 8px;
-}
-
-.list-menu .menu-card .content {
-  margin-top: 0.75rem;
-}
-
-.list-menu .menu-card .content .menu-card-title {
-  color: var(--main-background);
-}
-
-.list-menu .menu-card .content .menu-card-price {
-  color: var(--main-background);
+  cursor: pointer;
 }
 
 /* -------- MEDIA QUERIES  -------- */
@@ -327,6 +390,22 @@ body {
 
   .about .row .content p {
     font-size: 1.6rem;
+  }
+
+  .menu p {
+    font-size: 1.2rem;
+  }
+
+  .contact .row {
+    flex-wrap: wrap;
+  }
+
+  .contact .row .contact-map {
+    height: 30rem;
+  }
+
+  .contact .row form {
+    padding-top: 0;
   }
 }
 
